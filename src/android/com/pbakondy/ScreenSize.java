@@ -65,9 +65,9 @@ public class ScreenSize extends CordovaPlugin {
         result.put("ydpi", ydpi);
         result.put("densityValue", density_value);
         result.put("densityBucket", density_bucket);
-        result.put("DENSITY_DEVICE_STABLE", DisplayMetrics.DENSITY_DEVICE_STABLE);
-        result.put("densityDpi", dm.densityDpi);
-        result.put("displaySizeScaleFactor", DisplayMetrics.DENSITY_DEVICE_STABLE / dm.densityDpi);
+        //result.put("DENSITY_DEVICE_STABLE", DisplayMetrics.DENSITY_DEVICE_STABLE);
+        //result.put("densityDpi", dm.densityDpi);
+        result.put("displaySizeScaleFactor", (double)dm.densityDpi / (double)DisplayMetrics.DENSITY_DEVICE_STABLE;
       } catch (JSONException e) {}
 
       callbackContext.success(result);
