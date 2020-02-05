@@ -46,6 +46,7 @@ Return values:
 * `diameter` &lt;Number&gt; − screen diameter in inches (rounded to two decimals)
 * `densityValue` &lt;Number&gt; − density point (`0.75`, `1.0`, `1.5`, `2.0`, `3.0`, `4.0`)
 * `densityBucket` &lt;String&gt; − density bucket (`ldpi`, `mdpi`, `hdpi`, `xhdpi`, `xxhdpi`, `xxxhdpi`)
+* `displaySizeScaleFactor` &lt;Number&gt; - scale factor defined by [display size setting](https://support.google.com/accessibility/android/answer/6006972?hl=en)
 
 About density properties see this [Android docs](https://developer.android.com/guide/practices/screens_support.html) and this [Device metrics](https://design.google.com/devices/) page.
 
